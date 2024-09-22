@@ -1,9 +1,9 @@
-const { connectionString } = require('pg/lib/defaults');
+require('dotenv').config();
 const app = require('./src/app');
 const pool = require('./src/pool');
 
 pool.connect({
-    connectionString: 'postgresql://social-owner:k0pgbh2HZRwd@ep-misty-credit-a10b0i5m.ap-southeast-1.aws.neon.tech/social-db?sslmode=require'
+    connectionString: process.env.DB_URL
 })
     .then(() => {
         app().listen(3005, () => {
