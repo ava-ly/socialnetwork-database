@@ -1,1 +1,1 @@
-# Migrations, testing with PostgreSQL, Neon.tech (serverless postgres)
+# Migrations, testing with PostgreSQL, Neon.tech 
